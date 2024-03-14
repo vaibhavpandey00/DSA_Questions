@@ -371,7 +371,7 @@ int main()
 
     // vector<int> arr{2, 3, 5, 1, 1, 1, 1, 1};
     // vector<int> arr{-1, 1, 1};
-    // int k = 1, i = 0, j = 1, len = 0;
+    // int k = 5, i = 0, j = 1, len = 0;
     // long long sum = arr[0];
 
     // while (i < j && j < arr.size())
