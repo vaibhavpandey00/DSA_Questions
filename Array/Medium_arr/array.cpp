@@ -34,31 +34,32 @@ int main()
     // Q2 Given an array consisting of only 0s, 1s, and 2s. Write a program to in-place sort the array without using inbuilt sort functions. ( Expected: Single pass-O(N) and constant space)
 
     vector<int> arr{2, 0, 1, 0, 1, 2, 2, 0};
+    int i = 0, j = arr.size() - 1;
+    int curr = 0;
+
+    while (curr <= j)
+    {
+        if (arr[curr] == 0)
+        {
+            swap(arr[i], arr[curr]);
+            i++;
+            curr++;
+        }
+        else if (arr[curr] == 2)
+        {
+            swap(arr[j], arr[curr]);
+            j--;
+        }
+        else
+        {
+            curr++;
+        }
+    }
+
     for (auto it : arr)
     {
         cout << it << " ";
     }
-    int i = 0, j = 1;
-
-    while (i < j && j < arr.size())
-    {
-        if (arr[i] < arr[j])
-        {
-            swap(arr[i], arr[j]);
-            j++;
-        }
-        else if (arr[i] == arr[j])
-        {
-            i++;
-            swap(arr[i], arr[j]);
-            j++;
-        }
-    }
-
-    // for (auto it : arr)
-    // {
-    //     cout << it << " ";
-    // }
 
     return 0;
 }
