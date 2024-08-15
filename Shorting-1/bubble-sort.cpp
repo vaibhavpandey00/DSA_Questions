@@ -9,19 +9,12 @@ using namespace std;
 
 int main()
 {
-    int x;
     cout << "Enter number of Elements in an array : ";
-    cin >> x;
-    int arr[x];
-    cout << "Enter the elements in array : ";
-    for (int i = 0; i < x; i++)
-    {
-        cin >> arr[i];
-    }
+    int arr[20] = {45, 216, 198, 795, 484, 650, 590, 431, 705, 316, 557, 189, 652, 606, 153, 829, 813, 367, 658, 961};
 
     // Bubble sort
 
-    for (int j = x - 1; j >= 1; j--)
+    for (int j = 20 - 1; j >= 1; j--)
     {
         int didSwap = 0;
         for (int k = 0; k <= j; k++)
@@ -40,7 +33,7 @@ int main()
         // cout << "Count ";
     }
 
-    for (int t = 0; t < x; t++)
+    for (int t = 0; t < 20; t++)
     {
         cout << arr[t] << " ";
     }

@@ -18,7 +18,7 @@ int main()
         cin >> arr[i];
     }
 
-    // Selection short
+    // Selection sort
     for (int j = 0; j < x - 1; j++)
     {
         for (int k = j + 1; k < x; k++)
